@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Santhoshkumar • Portfolio</title>
+    <meta
+      name="description"
+      content="Modern responsive portfolio website — projects, skills, certificates, and contact."
+    />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script>
+      // Prevent theme flash before CSS loads.
+      (() => {
+        const saved = localStorage.getItem("theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.dataset.theme = saved;
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#home" data-nav>
+          <span class="brand__mark" aria-hidden="true"><center>SS</center></span>
+          <span class="brand__text">Santhoshkumar</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Open menu</span>
+          <span class="nav__burger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__links" id="nav-links">
+          <a href="#home" data-nav>Home</a>
+          <a href="#about" data-nav>About</a>
+          <a href="#skills" data-nav>Skills</a>
+          <a href="#projects" data-nav>Projects</a>
+          <a href="#certificates" data-nav>Certificates</a>
+          <a href="#resume" data-nav>Resume</a>
+          <a href="#contact" data-nav>Contact</a>
+        </div>
+
+        <div class="nav__actions">
+          <button class="icon-btn" type="button" id="themeToggle" aria-label="Toggle theme">
+            <span class="icon-btn__icon" aria-hidden="true">◐</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO / HOME -->
+      <section class="section hero" id="home" aria-label="Home">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow reveal">Hello, I’m</p>
+            <h1 class="reveal">
+              <span class="gradient-text">Santhoshkumar</span>
+              <span class="hero__subtitle">Python & Fullstack Developer</span>
+            </h1>
+            <p class="lead reveal">
+             <b>• </b>Passionate Developer     
+              <b> • </b>Creative Thinker   
+
+          </div>
+
+          <div class="hero__media reveal">
+            <div class="glass-card hero__card">
+              <img
+                class="hero__image"
+                src="./assets/home page img 1.jpeg"
+                alt="Profile illustration"
+                width="560"
+                height="560"
+                loading="eager"
+              />
+              <!-- <div class="hero__badge" aria-hidden="true">
+                <span class="dot"></span>
+                Building modern web
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section section--page" id="about" aria-label="About">
+        <div class="container split">
+          <div class="split__media reveal">
+            <div class="glass-card about__card">
+              <img
+                class="about__image"
+                src="./assets/about page img 2.jpeg"
+                alt="Workspace illustration"
+                width="640"
+                height="520"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="split__content">
+            <h2 class="section-title reveal">About</h2>
+            <p class="reveal">
+              I'm Santhoshkumar S , a passionate Full Stack Developer with knowledge of HTML, CSS, JavaScript, Python, and SQL. I enjoy building simple, user-friendly web applications and learning new technologies.
+            </p>
+            <p class="reveal">
+             I have worked on projects like an Employee Management System and a Travel Booking Website, where I implemented features like login systems and CRUD operations.
+            </p>
+            <p class="reveal">
+             <p class="reveal">
+             <p class="reveal">
+             I am eager to improve my skills and grow as a developer while creating useful and efficient web solutions.
+
+            <!-- <ul class="chips reveal" aria-label="What I do">
+              <li>Responsive UI</li>
+              <li>Design Systems</li>
+              <li>Animations</li>
+              <li>Accessibility</li>
+              <li>Performance</li>
+            </ul> -->
+
+            <div class="about__actions reveal">
+              <a class="btn btn--primary" href="#resume" data-nav>See Resume</a>
+              <a class="btn btn--ghost" href="#certificates" data-nav>Certificates</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section section--muted section--page" id="skills" aria-label="Skills">
+        <div class="container">
+          <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+          <p class="section-subtitle reveal">
+            A practical toolkit for building modern web apps.
+          </p>
+
+          <div class="skill-tiles" aria-label="Skill tiles">
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>Python</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>C++</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>Java</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML5"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>HTML5</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS3"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>CSS3</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>JavaScript</h3>
+            </article>
+
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                alt="Flutter"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>React</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                alt="Angular"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>MySQL</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>MongoDB</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                alt="Bootstrap"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>UI/UX</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <div class="skill-tile__glyph" aria-hidden="true">Cv</div>
+              <h3>Canva</h3>
+            </article>
+            <article class="skill-tile reveal">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+                width="56"
+                height="56"
+                loading="lazy"
+                decoding="async"
+                referrerpolicy="no-referrer"
+              />
+              <h3>Git</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects" aria-label="Projects">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 class="section-title reveal">Projects</h2>
+              <p class="section-subtitle reveal">
+                A few selected builds. Replace these with your real work.
+              </p>
+            </div>
+            <div class="reveal">
+              <div class="pill" role="group" aria-label="Project filters">
+                <button class="pill__btn is-active" type="button" data-filter="all">All</button>
+                <!-- <button class="pill__btn" type="button" data-filter="ui">UI</button> -->
+                <button class="pill__btn" type="button" data-filter="web">Web</button>
+                <!-- <button class="pill__btn" type="button" data-filter="js">JavaScript</button> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--3" id="projectGrid">
+            <article class="project reveal" data-tags="web,ui">
+              <div class="project__thumb" aria-hidden="true">
+                <div class="project__logo project__logo--a">PP</div>
+              </div>
+              <div class="project__body">
+                <h3>Personal Portfolio</h3>
+                <p>Developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase projects and skills. Implemented features like dark mode, project filtering, and smooth navigation for better user experience.</p>
+                <div class="tags" aria-label="Tags">
+                  <!-- <span>Web</span><span>UI</span> -->
+                </div>
+                <!-- <div class="project__actions">
+                  <a class="project-btn" href="#" aria-disabled="true">Visit Site</a>
+                  <a class="project-btn project-btn--solid" href="#" aria-disabled="true">View Gallery</a>
+                </div> -->
+              </div>
+            </article>
+
+            <article class="project reveal" data-tags="js,web">
+              <div class="project__thumb" aria-hidden="true">
+                <div class="project__logo project__logo--b">TB</div>
+              </div>
+              <div class="project__body">
+                <h3>Travel Booking Website</h3>
+                <p>A responsive travel booking platform with authentication, forms, booking flows, and secure user management.</p>
+                <div class="tags" aria-label="Tags">
+                  <!-- <span>JavaScript</span><span>Web</span> -->
+                </div>
+                <div class="project__actions">
+                  <!-- <a class="project-btn" href="#" aria-disabled="true">Visit Site</a>
+                  <a class="project-btn project-btn--solid" href="#" aria-disabled="true">View Gallery</a> -->
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal" data-tags="ui">
+              <div class="project__thumb" aria-hidden="true">
+                <div class="project__logo project__logo--c">FD</div>
+              </div>
+              <div class="project__body">
+                <h3>Smart Fraude Detection in Online Payment</h3>
+                <p>Developed a machine learning-based fraud detection system for online payment transactions to identify suspicious activities and reduce financial risk.</p>
+                <!-- <div class="tags" aria-label="Tags">
+                  <span>UI</span><span>Design</span>
+                </div>
+                <div class="project__actions">
+                  <a class="project-btn" href="#" aria-disabled="true">Visit Site</a>
+                  <a class="project-btn project-btn--solid" href="#" aria-disabled="true">View Gallery</a>
+                </div> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section class="section section--muted" id="certificates" aria-label="Certificates">
+        <div class="container">
+          <h2 class="cert-title reveal">Certifications</h2>
+          <p class="section-subtitle reveal">Training and achievements.</p>
+
+          <div class="cert-grid">
+            <section class="cert-panel reveal" aria-label="Certifications list">
+              <h3 class="cert-panel__title">Certifications</h3>
+              <div class="cert-list" role="list">
+                <article class="cert-item" role="listitem">
+                  <h4>Fullstack web development</h4>
+                  <p class="muted">Issuer:Skill Intern </p>
+                  <!-- <a class="link" href="#" aria-disabled="true">View credential</a> -->
+                </article>
+                <article class="cert-item" role="listitem">
+                  <h4>AI with Python</h4>
+                  <p class="muted">Issuer: Make clouds </p>
+                  <!-- <a class="link" href="#" aria-disabled="true">View credential</a> -->
+                </article>
+                <article class="cert-item" role="listitem">
+                  <h4>python with SQL AI-ML</h4>
+                  <p class="muted">Issuer: Diyantech solution Pvt ltd </p>
+                  <!-- <a class="link" href="#" aria-disabled="true">View credential</a> -->
+                </article>
+                  <article class="cert-item" role="listitem">
+                  <h4>Java Training</h4>
+                  <p class="muted">Issuer: Besant Technologies </p>
+                  <!-- <a class="link" href="#" aria-disabled="true">View credential</a> -->
+                </article>
+                  <article class="cert-item" role="listitem">
+                  <h4>Java Programming</h4>
+                  <p class="muted">Issuer: Great Learning </p>
+                  <!-- <a class="link" href="#" aria-disabled="true">View credential</a> -->
+                </article>
+              </div>
+            </section>
+
+            <section class="cert-panel reveal" aria-label="Internships list">
+              <h3 class="cert-panel__title">Internships</h3>
+
+              <h4 class="cert-panel__sub"></h4>
+              <div class="cert-list" role="list">
+                <article class="cert-item" role="listitem">
+                  <h4>Fullstack web development</h4>
+                  <p class="muted"></p>
+                  <p class="muted">Internship training is hands-on experience in building responsive web applications using front-end and back-end technologies.</p>
+                </article>
+              </div>
+
+              <h4 class="cert-panel__sub"></h4>
+              <div class="cert-list" role="list">
+                <article class="cert-item" role="listitem">
+                  <h4>AI with Python</h4>
+                  <p class="muted"></p>
+                  <p class="muted">AI with Python internship training and gained practical experience in Python programming, machine learning concepts, and data analysis.</p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section class="section section--page" id="resume" aria-label="Resume">
+        <div class="container">
+          <div class="resume-spotlight">
+            <h2 class="resume-title reveal">Resume</h2>
+            <p class="resume-subtitle reveal">
+              <b>Explore my professional journey, skills, and accomplishments in my resume.</b>
+            </p>
+            <div class="resume-actions reveal">
+              <a class="resume-btn" href="./assets/Santhoshkumar_resume.pdf" target="_blank" rel="noreferrer">
+                View Resume
+              </a>
+              <a class="resume-btn resume-btn--ghost" id="resumeDownload" href="./assets/Santhoshkumar_resume.pdf" download>
+                Download PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section--muted section--page" id="contact" aria-label="Contact">
+        <div class="container contact-layout">
+          <div class="contact-head reveal">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">
+              <b>Want to work together? Send a message—I'll reply soon.</b>
+            </p>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="contact-form__row">
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your Name" required />
+            </div>
+            <div class="contact-form__row">
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="Your Email" required />
+            </div>
+            <div class="contact-form__row">
+              <input id="subject" name="subject" type="text" placeholder="Subject" required />
+            </div>
+            <div class="contact-form__row">
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button class="contact-send" type="submit">Send Message</button>
+            <p class="form__note muted" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info reveal" aria-label="Contact info">
+            <a class="contact-card" href="mailto:youremail@example.com">
+              <span class="contact-card__label">Email:</span>
+              <span class="contact-card__value">santhoshkumarss7812@example.co</span>
+            </a>
+            <a class="contact-card" href="tel:+910000000000">
+              <span class="contact-card__label">Phone:</span>
+              <span class="contact-card__value">+91 78128 87840</span>
+            </a>
+            <a class="contact-card" href="https://www.linkedin.com/in/santhosh-kumar-s-355468278/" target="_blank" rel="noreferrer">
+              <span class="contact-card__label">LinkedIn:</span>
+              <span class="contact-card__value">linkedin.com/in/Santhosh</span>
+            </a>
+            <a class="contact-card" href="https://github.com/Santhoshkumar05-web" target="_blank" rel="noreferrer">
+              <span class="contact-card__label">GitHub:</span>
+              <span class="contact-card__value">github.com/Santhosh</span>
+            </a>
+          </div>
+
+          <div class="contact-social reveal" aria-label="Social links">
+            <a class="social-icon" href="https://www.instagram.com/mr.santhosh___007/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm5.6-2.35a1.1 1.1 0 1 1-2.2 0a1.1 1.1 0 0 1 2.2 0Z"
+                />
+              </svg>
+            </a>
+            <a class="social-icon" href="https://www.linkedin.com/in/santhosh-kumar-s-355468278/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3.5 21V9h3V21h-3Zm7 0V9h2.86v1.64h.04c.4-.76 1.38-1.56 2.84-1.56C19 9.08 20.5 10.62 20.5 14v7h-3v-6.2c0-1.48-.03-3.38-2.06-3.38c-2.06 0-2.38 1.61-2.38 3.28V21h-3Z"
+                />
+              </svg>
+            </a>
+            <a class="social-icon" href="https://github.com/Santhoshkumar05-web" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.35-1.17-3.35-1.17c-.45-1.14-1.1-1.44-1.1-1.44c-.9-.62.07-.61.07-.61c1 .07 1.53 1.03 1.53 1.03c.9 1.53 2.35 1.09 2.92.83c.09-.65.35-1.09.64-1.34c-2.21-.25-4.53-1.1-4.53-4.9c0-1.08.39-1.97 1.03-2.66c-.1-.26-.45-1.27.1-2.65c0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.8c.85 0 1.7.12 2.5.35c1.9-1.29 2.74-1.02 2.74-1.02c.56 1.38.21 2.39.1 2.65c.64.69 1.03 1.58 1.03 2.66c0 3.81-2.32 4.64-4.54 4.89c.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+                />
+              </svg>
+            </a>
+            <a class="social-icon" href="https://wa.me/" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M12 2a10 10 0 0 0-8.66 15l-1.2 4.4L6.7 20.2A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.07-1.11l-.29-.17l-2.41.63l.64-2.34l-.18-.3A8 8 0 1 1 12 20Zm4.38-5.8c-.24-.12-1.42-.7-1.64-.78c-.22-.08-.38-.12-.54.12c-.16.24-.62.78-.76.94c-.14.16-.28.18-.52.06c-.24-.12-1-.37-1.9-1.18c-.7-.62-1.18-1.39-1.32-1.63c-.14-.24-.01-.37.1-.49c.1-.1.24-.28.36-.42c.12-.14.16-.24.24-.4c.08-.16.04-.3-.02-.42c-.06-.12-.54-1.3-.74-1.78c-.2-.48-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3c-.22.24-.84.82-.84 2c0 1.18.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64c.58.25 1.03.4 1.38.52c.58.18 1.1.15 1.52.09c.46-.07 1.42-.58 1.62-1.14c.2-.56.2-1.04.14-1.14c-.06-.1-.22-.16-.46-.28Z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="contact-email-cta reveal">
+            <a class="email-cta" href="mailto:youremail@example.com">Send Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Santhosh. All rights reserved.</p>
+        <a class="link" href="#top" data-nav>Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
